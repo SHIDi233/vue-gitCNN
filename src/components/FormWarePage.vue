@@ -50,7 +50,7 @@ import global from './GlobalPage.vue'
                 params.append('wName',this.ruleForm.id);
                 params.append('description',this.ruleForm.desc);
 
-                axios.post(restweburl+'/applyWare', params).then(response => {
+                axios.post(restweburl+'applyWare', params).then(response => {
                     if(response.data.code==1){
                         alert("提交成功");
                         this.$router.push('projectsBox')
