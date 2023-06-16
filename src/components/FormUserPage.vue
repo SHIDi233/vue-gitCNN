@@ -63,7 +63,7 @@ import global from './GlobalPage.vue'
                 params.append('mail',this.ruleForm.id);
                 params.append('content',this.ruleForm.desc);
 
-                axios.post(restweburl+'/invite', params).then(response => {
+                axios.post(restweburl+'invite', params).then(response => {
                     if(response.data.code==1){
                         alert("提交成功");
                         this.$router.push('intro')
